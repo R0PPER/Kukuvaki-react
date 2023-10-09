@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    margin-top: 0.7rem;
+    color: rgb(255, 255, 255);    
+    /* border: 2px solid black; */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 2px red solid; */
+}
+
+.header .logo {
+    /* border: 3px solid green; */
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    margin: 0 5rem;
+
+}
+
+.header .nav {
+    /* border: 2px solid blue; */
+    margin: 0 5rem;
+    position: fixed;
+    right: 10px;
+}
+
+.header-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 1.5rem;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
+
+.light-bg .header-link {
+    color: black; /* Change link text color for light background */
+  }
+  
+  /* Define link styles for dark background */
+  .dark-bg .header-link {
+    color: white; /* Change link text color for dark background */
+  }

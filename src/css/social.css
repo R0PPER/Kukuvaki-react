@@ -1,0 +1,36 @@
+.social {
+    position: fixed;
+    right: 4%;
+    bottom: 40%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+    color: rgb(165, 42, 42);
+    z-index: 999;
+    /* border: 2px solid brown; */
+
+}
+.social ul {
+    /* border: 2px solid brown; */
+    padding: 0;
+}
+
+.social li {
+    margin-bottom: 0.4rem ;
+    cursor: pointer;
+    /* border: 2px solid brown; */
+}
+
+.social li:hover {
+    transform: scale(1.3);
+    rotate: 360deg;
+    transition: all 0.3s ease-in-out;
+}
+
+.social .border{
+    border: 1px solid rgb(165, 42, 42);
+    height: 5rem;
+    width: 0;
+    margin: 0 auto; /* Add this to center horizontally within the .social div */
+
+}

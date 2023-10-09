@@ -1,0 +1,87 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(32, 31, 31);
+    /* border:  2px solid rgb(206, 34, 34); */
+    height: 15rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 12rem;
+}
+
+.footer-container {
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    /* border: 2px blue solid; */
+}
+
+.logo-name {
+    /* border: white 2px solid; */
+    text-align: center;
+}
+
+.logo {
+   
+}
+
+.name {
+}
+
+.company-informations {
+    display: flex;
+    flex-direction: column;
+    /* border: white 2px solid; */
+    
+}
+.company-informations ul {
+    /* border: red 2px solid; */
+    width: fit-content;
+    padding-left: 0;
+}
+
+.company-informations ul li{
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin: 0 0 11px 0;
+    /* border: red 2px solid; */
+    text-align: center;
+    width: fit-content;
+}
+
+.company-informations ul li svg {
+    margin-right: 8px;
+    font-size: 20px; /* Adjust the icon size as needed */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.links .footer-link {
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.footer .copyright {
+    /* border: 2px white solid; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: fit-content;
+}
+
+.footer .copyright a {
+    color: rgb(165, 42, 42);
+}
+
