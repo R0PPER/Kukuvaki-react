@@ -1,0 +1,19 @@
+/* .shape-container {
+  border: red solid 2px;
+  display: flex;
+  margin: -1.4rem;
+  width: 100vw;
+  position: absolute;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #eee5e5;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(180deg);
+} */

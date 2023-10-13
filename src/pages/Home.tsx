@@ -1,10 +1,11 @@
 import image from "../images/mushroom.jpg";
 // import image1 from "../images/logo1.png";
 
-import "../css/home.css";
-import ChangeSwiper from "../components/ChangeSwiper"
+import "../css/homeCss/home.css";
+import ChangeSwiper from "../components/homeComponents/ChangeSwiper"
 import FixedIcons from "../components/SocialIcons";
 import ScrollToTop from "../components/btn-toTop";
+import HomeCarousel from "../components/homeComponents/HomeCarousel";
 
 
 
@@ -15,7 +16,8 @@ export default function Home() {
     return (
         <div className="home">
             <div className="upper-slider">
-                    <img src={image} alt="" />
+                    {/* <img src={image} alt="" /> */}
+                    <HomeCarousel />
             </div>
 
             <div className="container">

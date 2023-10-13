@@ -1,0 +1,52 @@
+.cooking {
+    /* border: 2px red solid; */
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 1); */
+}
+
+.cooking .shapes-container {
+    /* border: 2px black solid; */
+    height: 100vh;
+    /* border: 3px solid rgb(183, 243, 16); */
+}
+
+.cooking .shapes-container img{
+    /* border: 2px rgb(194, 25, 25) solid; */
+    max-height: 65%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cooking .container {
+    /* margin-top: 5rem; */
+    /* border: 2px black solid; */
+}
+
+.cooking-video {
+    /* border: 2px blue solid; */
+    height: fit-content;
+    width: 63%;
+    margin: -28rem auto;;
+    /* position: fixed; */
+    /* opacity: 0.99; */
+}
+
+.cooking-video video {
+    width: 100%;
+    margin: 0;
+    border-radius: 1rem;
+}
+
+.border-1{
+    border: 24px solid #E0CA3C;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+.border-2{
+    border: 17px solid #E0CA3C;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+
+}

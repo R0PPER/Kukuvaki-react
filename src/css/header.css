@@ -1,51 +1,193 @@
 .header {
-    position: fixed;
-    margin-top: 0.7rem;
-    color: rgb(255, 255, 255);    
-    /* border: 2px solid black; */
+  position: fixed;
+  margin-top: 0.7rem;
+  color: rgb(255, 255, 255);
+  /* border: 2px solid black; */
+  z-index: 999;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* border: 2px red solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 2px red solid; */
 }
 
 .header .logo {
-    /* border: 3px solid green; */
-    width: fit-content;
-    height: fit-content;
-    margin: 10px;
-    margin: 0 5rem;
-
+  /* border: 3px solid green; */
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+  margin: 0 5rem;
+  cursor: pointer;
+  z-index: 999;
 }
 
 .header .nav {
-    /* border: 2px solid blue; */
-    margin: 0 5rem;
-    position: fixed;
-    right: 10px;
+  /* border: 2px solid blue; */
+  margin: 0 5rem;
+  position: fixed;
+  right: 10px;
 }
 
 .header-link {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 0 1.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 1.5rem;
 }
 
 .header-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.light-bg .header-link {
-    color: black; /* Change link text color for light background */
-  }
-  
-  /* Define link styles for dark background */
-  .dark-bg .header-link {
-    color: white; /* Change link text color for dark background */
-  }
+/*burger Menu starts here */
+#menu {
+  /* border:rgb(255, 255, 255) 2px solid; */
+  width: 100vw;
+  justify-content: flex-end;
+  display: flex;
+}
+
+#menu-bar {
+  width: 33px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+  /* border: 2px solid black; */
+  margin-right: 2rem;
+}
+
+
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(165, 42, 42);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+#menu-bar:hover #bar2 {
+  transform: scaleX(0.5);
+  transition: 0.3s ease;
+  transform-origin: right; /* Change the transform-origin to make it shrink from left to right */
+
+}
+
+
+.nav {
+  transition: 2s ease;
+  display: none;
+  /* border: white 2px solid; */
+}
+
+.nav ul {
+  padding: 0 22px;
+  /* border: white 2px solid; */
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+  transition: 0.3s ease;
+  /* border: white 2px solid; */
+}
+
+.nav li a {
+  color: rgb(7, 6, 6);
+  font-size: 20px;
+  text-decoration: none;
+  /* border: wheat 2px solid; */
+}
+
+.nav li:nth-child(1) {
+  margin-left: 15px;
+}
+
+.nav li:nth-child(4) {
+  margin-left: 15px;
+}
+
+.nav li a:hover {
+  color: white;
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, rgb(165, 42, 42), rgb(165, 42, 42));
+  border-radius: 50%;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 0;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%, -30%);
+  right: -37rem;
+  z-index: -1;
+}
+
+/* .header .shape-container {
+  border: red solid 2px;
+  display: flex;
+  margin: -1.4rem;
+  width: 100vw;
+  position: absolute;
+}
+
+.header .triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #eee5e5;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(180deg);
+  margin: -1rem
+} */
+

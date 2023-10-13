@@ -8,6 +8,11 @@ import { FaHome, FaPhone, FaEnvelope, FaGlobe } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="footer">
+      
+      <div className="shape-container">
+        <div className="triangle-down"></div>
+      </div>
+      
       <div className="footer-container">
         <div className="logo-name">
           <div className="logo">

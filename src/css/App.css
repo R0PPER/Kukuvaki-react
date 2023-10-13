@@ -16,6 +16,28 @@ body {
   list-style-type: none;
 }
 
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+/* Style the thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: rgb(165, 42, 42); 
+  border-radius: 2rem; 
+  /* background-image: url("../images/logo1.png"); */
+  
+}
+
+/* Style the track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Style the buttons at the top and bottom of the scrollbar */
+::-webkit-scrollbar-button {
+  display: none; /* Hide the buttons */
+}
+
 .App{
   
 }
